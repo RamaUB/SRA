@@ -3,10 +3,13 @@
     <div class="container">
 
       <form id="login_form" class="form-signin" method="post">
-        <h3 class="form-signin-heading"><i class="icon-lock"></i> Identificarse</h3>
+        <h3 class="form-signin-heading"><i class="icon-lock"></i> Iniciar Sesión</h3>
         <input type="text" class="input-block-level" id="username" name="username" placeholder="Usuario" required>
         <input type="password" class="input-block-level" id="password" name="password" placeholder="Contraseña" required>
         <button name="login" class="btn btn-info" type="submit"><i class="icon-signin icon-"></i> Iniciar Sesión</button>
+		<div class="pull-right">
+			<button data-placement="top" title="Nuevo usuario" id="signup" onclick="window.location='signup.php'" name="login" class="btn btn-info" type="submit">Registrar Usuario</button>
+		</div>
 		
 		      </form>
 				<script>
@@ -36,10 +39,6 @@
 				});
 			});
 			</script>
-
-		
-
-
     </div> <!-- /container -->
   </body>
 </html>
